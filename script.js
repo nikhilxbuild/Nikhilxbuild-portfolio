@@ -1,8 +1,9 @@
-document.querySelectorAll(".icon, .btn").forEach(el => {
-  el.addEventListener("click", () => {
-    el.style.transform = "scale(0.9)";
-    setTimeout(() => {
-      el.style.transform = "";
-    }, 120);
+document.querySelectorAll(".icon, .btn, .skill, .card").forEach(el => {
+  el.addEventListener("touchstart", () => {
+    el.classList.add("active");
+  });
+
+  el.addEventListener("touchend", () => {
+    el.classList.remove("active");
   });
 });
