@@ -1,13 +1,8 @@
-const reveals = document.querySelectorAll(".reveal");
-
-function revealOnScroll() {
-  reveals.forEach(el => {
-    const top = el.getBoundingClientRect().top;
-    if (top < window.innerHeight - 100) {
-      el.classList.add("active");
-    }
+document.querySelectorAll(".icon, .btn").forEach(el => {
+  el.addEventListener("click", () => {
+    el.style.transform = "scale(0.9)";
+    setTimeout(() => {
+      el.style.transform = "";
+    }, 120);
   });
-}
-
-window.addEventListener("scroll", revealOnScroll);
-revealOnScroll();
+});
