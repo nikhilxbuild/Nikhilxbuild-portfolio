@@ -1,9 +1,11 @@
-document.querySelectorAll(".icon, .btn, .skill, .card").forEach(el => {
-  el.addEventListener("touchstart", () => {
-    el.classList.add("active");
-  });
+const fades = document.querySelectorAll('.fade');
 
-  el.addEventListener("touchend", () => {
-    el.classList.remove("active");
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
   });
-});
+}, { threshold: 0.2 });
+
+fades.forEach(el => observer.observe(el));
