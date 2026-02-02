@@ -3,41 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nikhil Sinha | AI Project Builder</title>
+  <title>Nikhil Sinha | Portfolio</title>
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Google Font (clean + modern) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <p class="intro">Hi, my name is</p>
-    <h1 class="name">Nikhil Sinha</h1>
-    <h2 class="tagline">I turn ideas into working products</h2>
+<!-- HERO -->
+<section class="hero reveal">
+  <p class="intro">Hi, my name is</p>
+  <h1>Nikhil <span>Sinha</span></h1>
+  <h2>I turn ideas into working products</h2>
+  <p class="desc">
+    I build real-world web projects using AI and modern web technologies.
+  </p>
 
-    <p class="description">
-      I build real-world web projects using AI and modern web technologies.
-    </p>
+  <div class="socials">
+    <a href="mailto:nikhilxbuild@gmail.com"><i class="ri-mail-line"></i></a>
+    <a href="https://github.com/nikhilxbuild" target="_blank"><i class="ri-github-line"></i></a>
+    <a href="https://www.linkedin.com/in/nikhilxbuild" target="_blank"><i class="ri-linkedin-line"></i></a>
+    <a href="https://twitter.com/nikhilxbuild" target="_blank"><i class="ri-twitter-x-line"></i></a>
+    <a href="https://www.instagram.com/nikhilxbuild" target="_blank"><i class="ri-instagram-line"></i></a>
+  </div>
 
-    <!-- SOCIAL LINKS -->
-    <div class="socials">
-      <a href="mailto:nikhilxbuild@gmail.com">Email</a>
-      <a href="https://github.com/nikhilxbuild" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
-      <a href="https://twitter.com/your-twitter" target="_blank">Twitter</a>
-      <a href="https://instagram.com/your-instagram" target="_blank">Instagram</a>
+  <div class="buttons">
+    <a class="btn primary" href="#">My Resume</a>
+    <a class="btn outline" href="#contact">Let's Talk</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section reveal">
+  <h3>About Me</h3>
+  <p>
+    I’m a passionate builder focused on creating scalable and performant web
+    applications. I love converting raw ideas into production-ready products
+    using JavaScript and AI tools.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section class="section reveal">
+  <h3>Skills</h3>
+
+  <div class="skills">
+    <i class="ri-html5-fill"></i>
+    <i class="ri-css3-fill"></i>
+    <i class="ri-javascript-fill"></i>
+    <i class="ri-reactjs-line"></i>
+    <i class="ri-nodejs-line"></i>
+    <i class="ri-github-line"></i>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section reveal">
+  <h3>Projects</h3>
+
+  <div class="projects">
+    <div class="card">
+      <h4>AI-Assisted Portfolio</h4>
+      <p>Personal portfolio built using AI + HTML/CSS/JS</p>
     </div>
-
-    <!-- BUTTONS -->
-    <div class="buttons">
-      <a class="btn primary" href="#">My Resume</a>
-      <a class="btn outline" href="mailto:nikhilxbuild@gmail.com">Let’s Talk</a>
+    <div class="card">
+      <h4>Automation Tool</h4>
+      <p>AI-based workflow automation project</p>
     </div>
-  </section>
+    <div class="card">
+      <h4>Web App</h4>
+      <p>JavaScript + AI powered web application</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="socials">
+    <a href="mailto:nikhilxbuild@gmail.com"><i class="ri-mail-line"></i></a>
+    <a href="https://github.com/nikhilxbuild" target="_blank"><i class="ri-github-line"></i></a>
+    <a href="https://www.linkedin.com/in/nikhilxbuild" target="_blank"><i class="ri-linkedin-line"></i></a>
+    <a href="https://twitter.com/nikhilxbuild" target="_blank"><i class="ri-twitter-x-line"></i></a>
+    <a href="https://www.instagram.com/nikhilxbuild" target="_blank"><i class="ri-instagram-line"></i></a>
+  </div>
+  <p>Made with ❤️ by Nikhil Sinha</p>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll(".reveal");
+  window.addEventListener("scroll", () => {
+    reveals.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+      if (top < window.innerHeight - 100) {
+        el.classList.add("active");
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
