@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.intro {
+  color: #a855f7;
+  margin-bottom: 6px;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h1 span {
+  border-bottom: 4px solid #a855f7;
+}
+
+.tagline {
+  margin-top: 12px;
+  color: #bbb;
+}
+
+.desc {
+  margin: 12px 0 28px;
+  color: #999;
+}
+
+/* SOCIAL ICONS */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 28px 0;
+}
+
+.icon {
+  width: 46px;
+  height: 46px;
+  border: 1px solid #333;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  transition: 0.25s ease;
+}
+
+.icon:hover,
+.icon:active {
+  color: #a855f7;
+  border-color: #a855f7;
+  box-shadow: 0 0 18px rgba(168,85,247,0.9);
+  transform: scale(1.15);
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.primary {
+  background: #a855f7;
+  border: none;
+  color: black;
+}
+
+.outline {
+  background: transparent;
+  border: 1px solid #a855f7;
+  color: white;
+}
+
+.btn:hover,
+.btn:active {
+  box-shadow: 0 0 18px rgba(168,85,247,0.9);
+  transform: scale(1.05);
+}
+
+/* SECTIONS */
+.section {
+  padding: 70px 24px;
+  text-align: center;
+}
+
+.section h2 {
+  color: #a855f7;
+  margin-bottom: 18px;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border: 1px solid #333;
+  border-radius: 20px;
+  transition: 0.25s ease;
+}
+
+.skill i {
+  font-size: 20px;
+}
+
+.skill:hover {
+  color: #a855f7;
+  border-color: #a855f7;
+  box-shadow: 0 0 16px rgba(168,85,247,0.8);
+  transform: scale(1.08);
+}
+
+/* PROJECT CARDS */
+.card {
+  background: #0a0a0a;
+  padding: 22px;
+  border-radius: 16px;
+  margin: 16px auto;
+  max-width: 420px;
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgba(168,85,247,0.8);
+}
+
+/* FOOTER */
+footer {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-text {
+  margin-top: 14px;
+  color: #777;
+}
