@@ -1,112 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nikhil Sinha</title>
-
-  <!-- FONT AWESOME -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
-
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Sinha - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- HERO -->
-<section class="hero">
-  <p class="intro">Hi, my name is</p>
-  <h1>Nikhil <span>Sinha</span></h1>
-  <p class="tagline">I turn ideas into working products</p>
+    <header class="hero">
+        <div class="container">
+            <p class="greeting">Hi, my name is</p>
+            <h1>Nikhil <span class="underline">Sinha</span></h1>
+            <p class="tagline">I turn ideas into working products</p>
+            <p class="sub-tagline">I build real-world web projects using AI and modern web technologies.</p>
 
-  <p class="desc">
-    I build real-world web projects using AI and modern web technologies.
-  </p>
+            <div class="social-links">
+                <a href="mailto:nikhilxbuild@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/nikhilxbuild/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/nikhilxbuild" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/nikhilxbuild" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/nikhilxbuild/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
 
-  <!-- SOCIAL -->
-  <div class="social">
-    <a href="mailto:nikhilxbuild@gmail.com" class="icon">
-      <i class="fa-regular fa-envelope"></i>
-    </a>
-    <a href="https://linkedin.com/in/nikhilxbuild" target="_blank" class="icon">
-      <i class="fa-brands fa-linkedin-in"></i>
-    </a>
-    <a href="https://github.com/nikhilxbuild" target="_blank" class="icon">
-      <i class="fa-brands fa-github"></i>
-    </a>
-    <a href="https://twitter.com/nikhilxbuild" target="_blank" class="icon">
-      <i class="fa-brands fa-x-twitter"></i>
-    </a>
-    <a href="https://instagram.com/nikhilxbuild" target="_blank" class="icon">
-      <i class="fa-brands fa-instagram"></i>
-    </a>
-  </div>
+            <div class="cta-buttons">
+                <a href="https://drive.google.com/file/d/180S6jJtSMQEzL9YYa5eeXKbpFQmfOeuM/view?usp=drivesdk" class="btn btn-primary" target="_blank">My Resume</a>
+                
+                <a href="mailto:nikhilxbuild@gmail.com" class="btn btn-secondary">Let's Talk</a>
+            </div>
+        </div>
+    </header>
 
-  <div class="buttons">
-    <button class="btn primary">My Resume</button>
-    <button class="btn outline">Let’s Talk</button>
-  </div>
-</section>
+    <section class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="description">
+                I'm a passionate builder focused on creating scalable and performant web applications. I take responsibility to craft clean user experiences using modern frontend architecture.
+            </p>
+        </div>
+    </section>
 
-<!-- ABOUT -->
-<section class="section">
-  <h2>About Me</h2>
-  <p>
-    I'm a passionate builder focused on creating scalable and performant web
-    applications. I take responsibility to craft clean user experiences using
-    modern frontend architecture.
-  </p>
-</section>
+    <section class="section skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fa-brands fa-html5"></i> HTML</div>
+                <div class="skill-card"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+                <div class="skill-card"><i class="fa-brands fa-js"></i> JavaScript</div>
+                <div class="skill-card"><i class="fa-brands fa-node-js"></i> Node.js</div>
+                <div class="skill-card"><i class="fa-brands fa-python"></i> Python</div>
+                <div class="skill-card"><i class="fa-solid fa-code"></i> TypeScript</div>
+            </div>
+        </div>
+    </section>
 
-<!-- SKILLS -->
-<section class="section">
-  <h2>Skills</h2>
+    <section class="section projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="project-card">
+                <h3>EduSlide AI</h3>
+                <p>Generates cost-saving n-up notes for students and teaching-ready PPTs for teachers.</p>
+            </div>
 
-  <div class="skills">
-    <div class="skill"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
-    <div class="skill"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
-    <div class="skill"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
-    <div class="skill"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
-    <div class="skill"><i class="fa-brands fa-python"></i><span>Python</span></div>
-    <div class="skill"><i class="fa-solid fa-code"></i><span>TypeScript</span></div>
-  </div>
-</section>
+            <div class="project-card">
+                <h3>Automation Tool</h3>
+                <p>AI-based workflow automation for productivity.</p>
+            </div>
 
-<!-- PROJECTS -->
-<section class="section">
-  <h2>Projects</h2>
+            <div class="project-card">
+                <h3>AI-Assisted Portfolio</h3>
+                <p>Personal portfolio built using AI + HTML/CSS/JS.</p>
+            </div>
+        </div>
+    </section>
 
-  <div class="card">
-    <h3>AI-Assisted Portfolio</h3>
-    <p>Personal portfolio built using AI + HTML/CSS/JS.</p>
-  </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="mailto:nikhilxbuild@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/nikhilxbuild/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/nikhilxbuild" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/nikhilxbuild" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/nikhilxbuild/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="copyright">Made with <span class="heart">❤️</span> by Nikhil Sinha</p>
+        </div>
+    </footer>
 
-  <div class="card">
-    <h3>Automation Tool</h3>
-    <p>AI-based workflow automation for productivity.</p>
-  </div>
-
-  <div class="card">
-    <h3>Web Application</h3>
-    <p>JavaScript + AI powered full-stack application.</p>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="social">
-    <a href="mailto:nikhilxbuild@gmail.com" class="icon"><i class="fa-regular fa-envelope"></i></a>
-    <a href="https://linkedin.com/in/nikhilxbuild" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-    <a href="https://github.com/nikhilxbuild" class="icon"><i class="fa-brands fa-github"></i></a>
-    <a href="https://twitter.com/nikhilxbuild" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
-    <a href="https://instagram.com/nikhilxbuild" class="icon"><i class="fa-brands fa-instagram"></i></a>
-  </div>
-
-  <p class="footer-text">Made with ❤️ by Nikhil Sinha</p>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
