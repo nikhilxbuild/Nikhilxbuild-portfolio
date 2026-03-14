@@ -1,3 +1,4 @@
+// --- CUSTOM CURSOR ---
 const cursorDot = document.querySelector('.cursor-dot');
 const cursorRing = document.querySelector('.cursor-ring');
 
@@ -18,12 +19,13 @@ const loop = () => {
 };
 requestAnimationFrame(loop);
 
-const interactables = document.querySelectorAll('a, button, .social-btn, .tech-item');
+const interactables = document.querySelectorAll('a, button, .social-btn, .tech-item, .work-item');
 interactables.forEach(el => {
     el.addEventListener('mouseenter', () => cursorRing.classList.add('hover'));
     el.addEventListener('mouseleave', () => cursorRing.classList.remove('hover'));
 });
 
+// --- LOADER & INITIAL REVEAL ---
 const duration = 1600;
 const loader = document.getElementById('loader');
 const progressEl = document.getElementById('loaderProgress');
@@ -53,6 +55,7 @@ function animateLoader(timestamp) {
         loader.style.visibility = "hidden";
         document.body.classList.remove('loading');
         
+        // Trigger initial elements in view
         document.querySelectorAll('.rev').forEach(el => {
             el.classList.add('in');
         });
@@ -65,6 +68,7 @@ function animateLoader(timestamp) {
 }
 requestAnimationFrame(animateLoader);
 
+// --- SCROLL REVEAL EFFECT ---
 function initScrollReveal() {
     if (!('IntersectionObserver' in window)) {
         document.querySelectorAll('.rev').forEach(el => el.classList.add('in'));
@@ -74,12 +78,12 @@ function initScrollReveal() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('in');
+                entry.target.classList.add('in'); // Adds the class that makes it slide up and fade in
             }
         });
     }, {
-        threshold: 0,
-        rootMargin: '0px 0px -40px 0px'
+        threshold: 0.1, // Element must be 10% visible to trigger
+        rootMargin: '0px 0px -50px 0px'
     });
 
     document.querySelectorAll('.rev').forEach(el => {
@@ -87,6 +91,7 @@ function initScrollReveal() {
     });
 }
 
+// --- MOBILE MENU ---
 const hamburgerBtn = document.getElementById('hamburgerBtn');
 const mobileMenu = document.getElementById('mobileMenu');
 const menuLinks = document.querySelectorAll('.menu-link');
@@ -102,6 +107,7 @@ menuLinks.forEach(link => {
     });
 });
 
+// --- CAREER TIMELINE HIGHLIGHTER ---
 const timelineContainer = document.getElementById('timelineContainer');
 const timelineProgress = document.getElementById('timelineProgress');
 const timelineItems = document.querySelectorAll('.timeline-item');
@@ -135,3 +141,4 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
