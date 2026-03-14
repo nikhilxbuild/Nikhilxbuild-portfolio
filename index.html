@@ -3,92 +3,333 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikhil Sinha - Portfolio</title>
+    <title>Nikhil Sinha | Web Developer & Product Builder</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="loading">
+    <div class="noise"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
 
-    <header class="hero">
-        <div class="container">
-            <p class="greeting">Hi, my name is</p>
-            <h1>Nikhil <span class="underline">Sinha</span></h1>
-            <p class="tagline">I turn ideas into working products</p>
-            <p class="sub-tagline">I build real-world web projects using AI and modern web technologies.</p>
+    <a href="https://drive.google.com/file/d/180S6jJtSMQEzL9YYa5eeXKbpFQmfOeuM/view" target="_blank" class="sticky-resume-btn">Resume</a>
 
-            <div class="social-links">
-                <a href="mailto:nikhilxbuild@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/nikhilxbuild/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/nikhilxbuild" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://x.com/nikhilxbuild" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://www.instagram.com/nikhilxbuild/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-
-            <div class="cta-buttons">
-                <a href="https://drive.google.com/file/d/180S6jJtSMQEzL9YYa5eeXKbpFQmfOeuM/view?usp=drivesdk" class="btn btn-primary" target="_blank">My Resume</a>
-                
-                <a href="mailto:nikhilxbuild@gmail.com" class="btn btn-secondary">Let's Talk</a>
-            </div>
+    <div id="loader">
+        <div class="loader-text">
+            <span class="loader-char">N</span>
+            <span class="loader-char">I</span>
+            <span class="loader-char">K</span>
+            <span class="loader-char">H</span>
+            <span class="loader-char">I</span>
+            <span class="loader-char">L</span>
+            <span class="loader-char accent">.</span>
         </div>
-    </header>
-
-    <section class="section about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <p class="description">
-                I'm a passionate builder focused on creating scalable and performant web applications. I take responsibility to craft clean user experiences using modern frontend architecture.
-            </p>
+        <div class="loader-progress-wrap">
+            <div class="loader-progress" id="loaderProgress"></div>
         </div>
-    </section>
+    </div>
 
-    <section class="section skills">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card"><i class="fa-brands fa-html5"></i> HTML</div>
-                <div class="skill-card"><i class="fa-brands fa-css3-alt"></i> CSS</div>
-                <div class="skill-card"><i class="fa-brands fa-js"></i> JavaScript</div>
-                <div class="skill-card"><i class="fa-brands fa-node-js"></i> Node.js</div>
-                <div class="skill-card"><i class="fa-brands fa-python"></i> Python</div>
-                <div class="skill-card"><i class="fa-solid fa-code"></i> TypeScript</div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="menu-link">About</a>
+        <a href="#work" class="menu-link">Work</a>
+        <a href="#career" class="menu-link">Career</a>
+        <a href="#contact" class="menu-link">Contact</a>
+        <a href="https://drive.google.com/file/d/180S6jJtSMQEzL9YYa5eeXKbpFQmfOeuM/view" target="_blank" class="nav-resume">Resume ↗</a>
+    </div>
+
+    <nav class="rev">
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#career">Career</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <main>
+        <section id="hero">
+            <div class="rev">
+                <p class="hero-eyebrow">Web Developer & Product Builder</p>
+                <h1 class="hero-title">NIKHIL<br><span>SINHA</span></h1>
+                <p class="hero-desc">Building web applications, automation tools, and AI-powered products. Focused on solving real-world problems with scalable, modern software.</p>
+                <div class="hero-stats">
+                    <div>6+ Projects Shipped</div>
+                    <div>AI Powered Products</div>
+                </div>
+                <div>
+                    <a href="https://drive.google.com/file/d/180S6jJtSMQEzL9YYa5eeXKbpFQmfOeuM/view" target="_blank" class="hero-resume-btn">View Resume ↗</a>
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="scroll-indicator rev">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
 
-    <section class="section projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
+        <section id="about">
+            <div class="about-left rev">
+                <h2 class="section-title">WHO AM I</h2>
+            </div>
+            <div class="about-right rev">
+                <p class="about-text">
+                    Web developer and product builder crafting <span>web applications, automation tools, and AI-powered products</span> that solve real-world problems. Currently building EduSlide AI, intelligent study systems, and scalable web platforms.
+                </p>
+                <div class="skill-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Next.js</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">HTML</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">CSS</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="what-i-do">
+            <h2 class="section-title rev">WHAT I DO</h2>
+            <div class="panels">
+                <div class="panel rev">
+                    <h3>DEVELOP</h3>
+                    <p>I build modern web applications, AI-powered tools, and developer utilities focused on automation, productivity, and scalable software systems.</p>
+                    <div class="skill-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Next.js</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="panel rev">
+                    <h3>PRODUCT</h3>
+                    <p>Focused on product thinking, system architecture, and building intuitive user interfaces for web products and developer tools.</p>
+                    <div class="skill-tags">
+                        <span class="tag">UI Design</span>
+                        <span class="tag">System Design</span>
+                        <span class="tag">Product Development</span>
+                        <span class="tag">Software Architecture</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech-stack">
+            <h2 class="section-title rev">TECH STACK</h2>
+            <div class="tech-grid">
+                <div class="tech-item rev">
+                    <i class="devicon-javascript-plain tech-icon"></i>
+                    <span class="tech-name">JavaScript</span>
+                </div>
+                <div class="tech-item rev">
+                    <i class="devicon-typescript-plain tech-icon"></i>
+                    <span class="tech-name">TypeScript</span>
+                </div>
+                <div class="tech-item rev">
+                    <i class="devicon-react-original tech-icon"></i>
+                    <span class="tech-name">React</span>
+                </div>
+                <div class="tech-item rev">
+                    <i class="devicon-nextjs-plain tech-icon"></i>
+                    <span class="tech-name">Next.js</span>
+                </div>
+                <div class="tech-item rev">
+                    <i class="devicon-nodejs-plain tech-icon"></i>
+                    <span class="tech-name">Node.js</span>
+                </div>
+                <div class="tech-item rev">
+                    <i class="devicon-mysql-plain tech-icon"></i>
+                    <span class="tech-name">MySQL</span>
+                </div>
+                <div class="tech-item rev">
+                    <i class="devicon-python-plain tech-icon"></i>
+                    <span class="tech-name">Python</span>
+                </div>
+                <div class="tech-item rev">
+                    <i class="devicon-java-plain tech-icon"></i>
+                    <span class="tech-name">Java</span>
+                </div>
+                <div class="tech-item rev">
+                    <i class="devicon-html5-plain tech-icon"></i>
+                    <span class="tech-name">HTML</span>
+                </div>
+                <div class="tech-item rev">
+                    <i class="devicon-cplusplus-plain tech-icon"></i>
+                    <span class="tech-name">C++</span>
+                </div>
+                <div class="tech-item rev">
+                    <i class="devicon-css3-plain tech-icon"></i>
+                    <span class="tech-name">CSS</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="work">
+            <h2 class="section-title rev">SELECTED WORK</h2>
+            <div class="work-list">
+                <div class="work-item rev">
+                    <div class="work-num">01</div>
+                    <div class="work-details">
+                        <div class="work-title">EduSlide AI</div>
+                        <div class="work-desc">An intelligent platform that automatically converts educational text and documents into structured, ready-to-present slides.</div>
+                    </div>
+                    <div class="work-meta">
+                        <span class="work-category">AI Productivity Tool</span>
+                        <span class="work-tech">React · Node.js · AI APIs · JavaScript</span>
+                    </div>
+                </div>
+                <div class="work-item rev">
+                    <div class="work-num">02</div>
+                    <div class="work-details">
+                        <div class="work-title">Hospital Management System</div>
+                        <div class="work-desc">A comprehensive digital solution for efficiently handling patient appointments, automated token generation, and medical records.</div>
+                    </div>
+                    <div class="work-meta">
+                        <span class="work-category">Web Application</span>
+                        <span class="work-tech">Next.js · Node.js · MySQL</span>
+                    </div>
+                </div>
+                <div class="work-item rev">
+                    <div class="work-num">03</div>
+                    <div class="work-details">
+                        <div class="work-title">AI Portfolio Builder</div>
+                        <div class="work-desc">A developer tool that leverages AI to generate personalized, highly responsive portfolio websites in minutes.</div>
+                    </div>
+                    <div class="work-meta">
+                        <span class="work-category">Developer Tool</span>
+                        <span class="work-tech">React · TypeScript · Next.js</span>
+                    </div>
+                </div>
+                <div class="work-item rev">
+                    <div class="work-num">04</div>
+                    <div class="work-details">
+                        <div class="work-title">AI Study Tool</div>
+                        <div class="work-desc">An interactive learning assistant that helps students summarize complex notes and generate custom practice quizzes.</div>
+                    </div>
+                    <div class="work-meta">
+                        <span class="work-category">AI Education Tool</span>
+                        <span class="work-tech">JavaScript · React · AI APIs</span>
+                    </div>
+                </div>
+                <div class="work-item rev">
+                    <div class="work-num">05</div>
+                    <div class="work-details">
+                        <div class="work-title">Developer Productivity Tools</div>
+                        <div class="work-desc">A custom suite of automation scripts and CLI utilities designed to significantly streamline daily software development workflows.</div>
+                    </div>
+                    <div class="work-meta">
+                        <span class="work-category">Automation Tools</span>
+                        <span class="work-tech">Node.js · JavaScript</span>
+                    </div>
+                </div>
+                <div class="work-item rev">
+                    <div class="work-num">06</div>
+                    <div class="work-details">
+                        <div class="work-title">Personal Portfolio Website</div>
+                        <div class="work-desc">An immersive, interactive web experience built from scratch to showcase my projects, skills, and technical journey.</div>
+                    </div>
+                    <div class="work-meta">
+                        <span class="work-category">Web Development</span>
+                        <span class="work-tech">React · TypeScript · Three.js</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="career">
+            <div class="career-left rev">
+                <div class="career-sticky">
+                    <h2 class="section-title">CAREER<br>TIMELINE</h2>
+                </div>
+            </div>
+            <div class="career-right rev">
+                <div class="timeline" id="timelineContainer">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-progress" id="timelineProgress"></div>
+                    
+                    <div class="timeline-item active">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">Now</div>
+                        <div class="timeline-role">Independent Developer & Freelancer | Personal Projects</div>
+                        <p class="timeline-desc">Building web products, AI tools, and developer utilities while experimenting with scalable systems.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2026</div>
+                        <div class="timeline-role">Web Developer | EduSlide AI</div>
+                        <p class="timeline-desc">Built an AI-powered tool that converts educational content into structured presentation slides.</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2026</div>
+                        <div class="timeline-role">Web Developer | Hospital Management System</div>
+                        <p class="timeline-desc">Developed a web-based hospital appointment and management system for booking, tokens, and medical records.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-ghost">CONTACT</div>
+            <h2 class="contact-heading display-font rev">LET'S CONNECT.</h2>
             
-            <div class="project-card">
-                <h3>EduSlide AI</h3>
-                <p>Generates cost-saving n-up notes for students and teaching-ready PPTs for teachers.</p>
+            <div class="contact-boxes">
+                <div class="c-box rev">
+                    <span class="c-box-title">Direct</span>
+                    <a href="mailto:nikhilxbuild@gmail.com" class="c-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="M2 7l10 7 10-7"/>
+                        </svg>
+                        nikhilxbuild@gmail.com
+                    </a>
+                </div>
+                <div class="c-box rev">
+                    <span class="c-box-title">Social</span>
+                    <a href="https://github.com/nikhilxbuild" target="_blank" class="c-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/nikhilxbuild" target="_blank" class="c-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://x.com/nikhilxbuild" target="_blank" class="c-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        Twitter/X
+                    </a>
+                    <a href="https://www.instagram.com/nikhilxbuild" target="_blank" class="c-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                        Instagram
+                    </a>
+                </div>
+                <div class="c-box rev">
+                    <div class="c-credit-name">Nikhil Sinha</div>
+                    <div style="color: var(--text-muted); font-size: 0.9rem;">© 2026</div>
+                </div>
             </div>
 
-            <div class="project-card">
-                <h3>Automation Tool</h3>
-                <p>AI-based workflow automation for productivity.</p>
-            </div>
-
-            <div class="project-card">
-                <h3>AI-Assisted Portfolio</h3>
-                <p>Personal portfolio built using AI + HTML/CSS/JS.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="social-links">
-                <a href="mailto:nikhilxbuild@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/nikhilxbuild/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/nikhilxbuild" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://x.com/nikhilxbuild" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://www.instagram.com/nikhilxbuild/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <p class="copyright">Made with <span class="heart">❤️</span> by Nikhil Sinha</p>
-        </div>
-    </footer>
+            <footer class="rev">
+                <div>NIKHIL SINHA</div>
+                <div>WEB DEVELOPER & PRODUCT BUILDER · © 2026<span class="blink">_</span></div>
+            </footer>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
