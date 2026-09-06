@@ -1,4 +1,3 @@
-```javascript
 /* =========================================================
    NIKHIL SINHA — PORTFOLIO
    Main JavaScript
@@ -26,17 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {
         let ringY = mouseY;
 
         document.addEventListener("mousemove", (event) => {
-
             mouseX = event.clientX;
             mouseY = event.clientY;
 
             cursorDot.style.transform =
                 `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
-
         });
 
         const animateCursor = () => {
-
             ringX += (mouseX - ringX) * 0.15;
             ringY += (mouseY - ringY) * 0.15;
 
@@ -48,26 +44,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
         requestAnimationFrame(animateCursor);
 
-        const updateCursorTargets = () => {
+        const interactables = document.querySelectorAll(
+            "a, button, input, textarea, .social-btn, .tech-item, .project-card, .experience-card, .testimonial-card"
+        );
 
-            const interactables = document.querySelectorAll(
-                "a, button, input, textarea, .social-btn, .tech-item, .project-card, .experience-card, .testimonial-card"
-            );
-
-            interactables.forEach((element) => {
-
-                element.addEventListener("mouseenter", () => {
-                    cursorRing.classList.add("hover");
-                });
-
-                element.addEventListener("mouseleave", () => {
-                    cursorRing.classList.remove("hover");
-                });
-
+        interactables.forEach((element) => {
+            element.addEventListener("mouseenter", () => {
+                cursorRing.classList.add("hover");
             });
-        };
 
-        updateCursorTargets();
+            element.addEventListener("mouseleave", () => {
+                cursorRing.classList.remove("hover");
+            });
+        });
     }
 
 
@@ -134,11 +123,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
                         char.style.opacity = "1";
                         char.style.transform = "translateY(0)";
+
                         char.style.transition =
                             "opacity 0.2s ease, transform 0.2s ease";
-
                     }
-
                 });
 
                 if (progress < 1) {
@@ -220,9 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
         );
 
         revealElements.forEach((element) => {
-
             observer.observe(element);
-
         });
     }
 
@@ -261,7 +247,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 "menu-open",
                 isOpen
             );
-
         });
 
 
@@ -280,9 +265,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.body.classList.remove(
                     "menu-open"
                 );
-
             });
-
         });
 
 
@@ -305,7 +288,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     "menu-open"
                 );
             }
-
         });
     }
 
@@ -349,9 +331,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     : "smooth",
                 block: "start"
             });
-
         });
-
     });
 
 
@@ -398,30 +378,23 @@ document.addEventListener("DOMContentLoaded", () => {
                                 "active",
                                 isActive
                             );
-
                         });
-
                     });
-
                 },
                 {
                     threshold: 0,
-                    rootMargin:
-                        "-35% 0px -55% 0px"
+                    rootMargin: "-35% 0px -55% 0px"
                 }
             );
 
         sections.forEach((section) => {
-
             sectionObserver.observe(section);
-
         });
     }
 
 
     /* =====================================================
        STICKY RESUME BUTTON
-       Hide it near the top, reveal after scrolling
        ===================================================== */
 
     const stickyResume =
@@ -444,9 +417,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 stickyResume.classList.remove(
                     "visible"
                 );
-
             }
-
         };
 
         window.addEventListener(
@@ -461,7 +432,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /* =====================================================
        PROJECT CARD HOVER
-       Adds a lightweight tilt effect on desktop
        ===================================================== */
 
     if (
@@ -506,19 +476,15 @@ document.addEventListener("DOMContentLoaded", () => {
                          rotateX(${rotateX}deg)
                          rotateY(${rotateY}deg)
                          translateY(-4px)`;
-
                 }
             );
 
             card.addEventListener(
                 "mouseleave",
                 () => {
-
                     card.style.transform = "";
-
                 }
             );
-
         });
     }
 
@@ -575,9 +541,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
                 const emailSubject =
-                    encodeURIComponent(
-                        subject
-                    );
+                    encodeURIComponent(subject);
 
                 const emailBody =
                     encodeURIComponent(
@@ -593,7 +557,6 @@ ${message}`
 
                 window.location.href =
                     `mailto:nikhilxbuild@gmail.com?subject=${emailSubject}&body=${emailBody}`;
-
             }
         );
     }
@@ -614,7 +577,6 @@ ${message}`
 
             element.textContent =
                 currentYear;
-
         });
 
 
@@ -634,9 +596,7 @@ ${message}`
                     "rel",
                     "noopener noreferrer"
                 );
-
             }
-
         });
 
 
@@ -649,5 +609,3 @@ ${message}`
     );
 
 });
-```
-
