@@ -1,4 +1,3 @@
-```css
 /* =========================================================
    NIKHIL SINHA — PORTFOLIO
    Premium Dark UI
@@ -24,7 +23,6 @@
     --font-body: "DM Mono", monospace;
 
     --container: 1500px;
-
     --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -54,7 +52,6 @@ body {
         var(--bg-main);
 
     color: var(--text-main);
-
     font-family: var(--font-body);
 
     overflow-x: hidden;
@@ -129,14 +126,12 @@ a {
 .cursor-dot,
 .cursor-ring {
     position: fixed;
-
     top: 0;
     left: 0;
 
     border-radius: 50%;
 
     pointer-events: none;
-
     z-index: 10000;
 }
 
@@ -146,8 +141,7 @@ a {
 
     background: var(--accent);
 
-    box-shadow:
-        0 0 10px var(--accent-glow);
+    box-shadow: 0 0 10px var(--accent-glow);
 }
 
 .cursor-ring {
@@ -168,12 +162,10 @@ a {
     height: 52px;
 
     background: var(--accent-soft);
-
     border-color: var(--accent);
 }
 
 @media (hover: none), (pointer: coarse) {
-
     body {
         cursor: auto;
     }
@@ -202,7 +194,6 @@ a {
 
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
 
@@ -229,9 +220,7 @@ a {
 
 .loader-char {
     opacity: 0;
-
     transform: translateY(20px);
-
     color: var(--text-main);
 }
 
@@ -244,7 +233,6 @@ a {
     height: 2px;
 
     position: relative;
-
     overflow: hidden;
 
     background: rgba(255, 255, 255, 0.1);
@@ -252,9 +240,7 @@ a {
 
 .loader-progress {
     position: absolute;
-
-    top: 0;
-    left: 0;
+    inset: 0 auto auto 0;
 
     width: 0%;
     height: 100%;
@@ -278,7 +264,6 @@ nav {
     padding: 1.4rem 5vw;
 
     display: flex;
-
     align-items: center;
 
     gap: 2rem;
@@ -288,21 +273,20 @@ nav {
     background:
         linear-gradient(
             to bottom,
-            rgba(5, 5, 7, 0.85),
-            transparent
+            rgba(5, 5, 7, 0.88),
+            rgba(5, 5, 7, 0)
         );
 
     backdrop-filter: blur(8px);
 }
 
 .nav-logo {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
     width: 42px;
     height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     border: 1px solid var(--border);
 
@@ -323,7 +307,6 @@ nav {
 
 .nav-links {
     display: flex;
-
     align-items: center;
 
     gap: clamp(1rem, 2vw, 2rem);
@@ -331,15 +314,12 @@ nav {
     margin-left: auto;
 
     font-size: 0.75rem;
-
-    text-transform: uppercase;
-
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .nav-links a {
     position: relative;
-
     color: var(--text-secondary);
 
     transition: color 0.3s ease;
@@ -377,10 +357,8 @@ nav {
     border: 1px solid var(--border);
 
     font-size: 0.72rem;
-
-    text-transform: uppercase;
-
     letter-spacing: 1px;
+    text-transform: uppercase;
 
     transition:
         background 0.3s ease,
@@ -403,15 +381,12 @@ nav {
     display: none;
 
     flex-direction: column;
-
     gap: 6px;
 
     margin-left: auto;
-
     padding: 10px;
 
     background: none;
-
     border: none;
 
     cursor: none;
@@ -425,8 +400,7 @@ nav {
 
     background: var(--text-main);
 
-    transition:
-        transform 0.4s var(--ease);
+    transition: transform 0.4s var(--ease);
 }
 
 .hamburger.active span:nth-child(1) {
@@ -439,17 +413,13 @@ nav {
 
 .mobile-menu {
     position: fixed;
-
     inset: 0;
 
     z-index: 103;
 
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
-
     align-items: center;
 
     gap: 1.4rem;
@@ -474,9 +444,7 @@ nav {
 
 .mobile-menu a {
     font-family: var(--font-display);
-
     font-size: clamp(2rem, 8vw, 3rem);
-
     font-weight: 700;
 
     transition: color 0.25s ease;
@@ -490,7 +458,6 @@ nav {
     margin-top: 1rem;
 
     font-family: var(--font-body);
-
     font-size: 0.9rem;
 }
 
@@ -501,7 +468,6 @@ nav {
 
 .rev {
     opacity: 0;
-
     transform: translateY(40px);
 
     transition:
@@ -511,7 +477,6 @@ nav {
 
 .rev.in {
     opacity: 1;
-
     transform: translateY(0);
 }
 
@@ -541,12 +506,11 @@ section {
 
 
 /* =========================================================
-   SECTION HEADING
+   SECTION HEADINGS
    ========================================================= */
 
 .section-heading {
     display: flex;
-
     align-items: baseline;
 
     gap: 1.5rem;
@@ -558,13 +522,11 @@ section {
     color: var(--accent);
 
     font-size: 0.72rem;
-
     letter-spacing: 2px;
 }
 
 .section-title {
     font-size: clamp(2rem, 4vw, 3.5rem);
-
     letter-spacing: -0.03em;
 }
 
@@ -588,9 +550,7 @@ section {
     min-height: 100vh;
 
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
 
     border-top: none;
@@ -629,9 +589,7 @@ section {
 
 .hero-eyebrow {
     display: inline-flex;
-
     align-items: center;
-
     gap: 10px;
 
     margin-bottom: 1.5rem;
@@ -641,7 +599,6 @@ section {
     font-size: 0.78rem;
 
     letter-spacing: 2px;
-
     text-transform: uppercase;
 }
 
@@ -657,11 +614,12 @@ section {
 .hero-title {
     margin-left: -0.08em;
 
-    font-size: clamp(
-        5rem,
-        13vw,
-        12rem
-    );
+    font-size:
+        clamp(
+            5rem,
+            13vw,
+            12rem
+        );
 
     line-height: 0.78;
 
@@ -679,16 +637,16 @@ section {
 
     color: var(--text-muted);
 
-    font-size: clamp(
-        0.95rem,
-        1.5vw,
-        1.1rem
-    );
+    font-size:
+        clamp(
+            0.95rem,
+            1.5vw,
+            1.1rem
+        );
 }
 
 .hero-actions {
     display: flex;
-
     flex-wrap: wrap;
 
     gap: 1rem;
@@ -712,7 +670,6 @@ section {
     font-size: 0.75rem;
 
     letter-spacing: 1px;
-
     text-transform: uppercase;
 
     transition:
@@ -723,13 +680,11 @@ section {
 
 .hero-primary-btn {
     background: var(--accent);
-
     color: var(--bg-main);
 }
 
 .hero-primary-btn:hover {
     background: transparent;
-
     color: var(--accent);
 
     transform: translateY(-3px);
@@ -737,13 +692,11 @@ section {
 
 .hero-secondary-btn {
     border-color: var(--border);
-
     color: var(--text-main);
 }
 
 .hero-secondary-btn:hover {
     border-color: var(--accent);
-
     color: var(--accent);
 
     transform: translateY(-3px);
@@ -751,7 +704,6 @@ section {
 
 .hero-stats {
     display: flex;
-
     flex-wrap: wrap;
 
     gap: 2.5rem;
@@ -765,7 +717,6 @@ section {
 
 .hero-stats div {
     display: flex;
-
     flex-direction: column;
 
     gap: 0.45rem;
@@ -796,7 +747,6 @@ section {
     bottom: 5rem;
 
     display: flex;
-
     flex-direction: column;
 
     gap: 0.5rem;
@@ -828,10 +778,7 @@ section {
     bottom: 2rem;
     left: 50%;
 
-    transform: translateX(-50%);
-
     display: flex;
-
     flex-direction: column;
 
     align-items: center;
@@ -845,6 +792,8 @@ section {
     letter-spacing: 2px;
 
     text-transform: uppercase;
+
+    transform: translateX(-50%);
 }
 
 .scroll-line {
@@ -876,7 +825,6 @@ section {
 }
 
 @keyframes scrollDown {
-
     0% {
         top: -100%;
     }
@@ -916,11 +864,12 @@ section {
 
     font-family: var(--font-display);
 
-    font-size: clamp(
-        1.7rem,
-        3vw,
-        3rem
-    );
+    font-size:
+        clamp(
+            1.7rem,
+            3vw,
+            3rem
+        );
 
     line-height: 1.25;
 }
@@ -941,7 +890,6 @@ section {
 
 .about-details {
     display: grid;
-
     gap: 1rem;
 }
 
@@ -1008,10 +956,11 @@ section {
 .skills-groups {
     display: grid;
 
-    grid-template-columns: repeat(
-        2,
-        minmax(0, 1fr)
-    );
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
 
     gap: 1px;
 
@@ -1021,7 +970,12 @@ section {
 }
 
 .skill-group {
-    padding: clamp(1.5rem, 4vw, 3rem);
+    padding:
+        clamp(
+            1.5rem,
+            4vw,
+            3rem
+        );
 
     background: var(--bg-main);
 }
@@ -1153,15 +1107,18 @@ section {
 .project-card {
     display: grid;
 
-    grid-template-columns: 80px minmax(0, 1fr);
+    grid-template-columns:
+        80px
+        minmax(0, 1fr);
 
     gap: 2rem;
 
-    padding: clamp(
-        1.5rem,
-        4vw,
-        3rem
-    );
+    padding:
+        clamp(
+            1.5rem,
+            4vw,
+            3rem
+        );
 
     border: 1px solid var(--border);
 
@@ -1205,6 +1162,7 @@ section {
     display: flex;
 
     align-items: flex-start;
+
     justify-content: space-between;
 
     gap: 2rem;
@@ -1225,11 +1183,12 @@ section {
 }
 
 .project-header h3 {
-    font-size: clamp(
-        1.7rem,
-        3vw,
-        2.8rem
-    );
+    font-size:
+        clamp(
+            1.7rem,
+            3vw,
+            2.8rem
+        );
 
     line-height: 1;
 }
@@ -1363,12 +1322,17 @@ section {
     display: grid;
 
     grid-template-columns:
-        220px minmax(0, 1fr);
+        220px
+        minmax(0, 1fr);
 
     gap: 4rem;
 
     padding:
-        clamp(1.5rem, 4vw, 3rem)
+        clamp(
+            1.5rem,
+            4vw,
+            3rem
+        )
         0;
 
     border-bottom: 1px solid var(--border);
@@ -1405,11 +1369,12 @@ section {
 .experience-main h3 {
     margin-bottom: 0.4rem;
 
-    font-size: clamp(
-        1.6rem,
-        3vw,
-        2.5rem
-    );
+    font-size:
+        clamp(
+            1.6rem,
+            3vw,
+            2.5rem
+        );
 }
 
 .experience-main h4 {
@@ -1488,11 +1453,12 @@ section {
 .resume-copy .section-title {
     margin-bottom: 1.5rem;
 
-    font-size: clamp(
-        3rem,
-        7vw,
-        6rem
-    );
+    font-size:
+        clamp(
+            3rem,
+            7vw,
+            6rem
+        );
 }
 
 .resume-copy > p {
@@ -1631,11 +1597,12 @@ section {
 
     justify-content: space-between;
 
-    padding: clamp(
-        1.5rem,
-        4vw,
-        3rem
-    );
+    padding:
+        clamp(
+            1.5rem,
+            4vw,
+            3rem
+        );
 
     border: 1px solid var(--border);
 
@@ -1669,11 +1636,12 @@ section {
 
     font-family: var(--font-display);
 
-    font-size: clamp(
-        1.05rem,
-        1.8vw,
-        1.35rem
-    );
+    font-size:
+        clamp(
+            1.05rem,
+            1.8vw,
+            1.35rem
+        );
 
     line-height: 1.45;
 }
@@ -1764,11 +1732,12 @@ section {
 
     margin-top: 1rem;
 
-    font-size: clamp(
-        3.5rem,
-        9vw,
-        9rem
-    );
+    font-size:
+        clamp(
+            3.5rem,
+            9vw,
+            9rem
+        );
 
     line-height: 0.88;
 
@@ -1995,13 +1964,13 @@ footer {
 }
 
 .footer-logo {
+    width: 48px;
+    height: 48px;
+
     display: flex;
 
     align-items: center;
     justify-content: center;
-
-    width: 48px;
-    height: 48px;
 
     margin-bottom: 1rem;
 
@@ -2104,11 +2073,9 @@ footer {
 }
 
 @keyframes blinker {
-
     50% {
         opacity: 0;
     }
-
 }
 
 
@@ -2136,7 +2103,6 @@ footer {
     color: var(--bg-main);
 
     writing-mode: vertical-rl;
-
     text-orientation: mixed;
 
     font-size: 0.65rem;
@@ -2174,7 +2140,7 @@ footer {
 
 
 /* =========================================================
-   RESPONSIVE — TABLET
+   TABLET
    ========================================================= */
 
 @media (max-width: 1100px) {
@@ -2196,27 +2162,25 @@ footer {
     .contact-grid {
         gap: 3rem;
     }
-
 }
 
 
 /* =========================================================
-   RESPONSIVE — MOBILE
+   MOBILE
    ========================================================= */
 
 @media (max-width: 768px) {
 
     main {
-        width: min(
-            calc(100% - 10vw),
-            var(--container)
-        );
+        width:
+            min(
+                calc(100% - 10vw),
+                var(--container)
+            );
     }
 
     section {
-        padding:
-            5rem
-            0;
+        padding: 5rem 0;
     }
 
 
@@ -2376,11 +2340,12 @@ footer {
     /* Contact */
 
     .contact-heading {
-        font-size: clamp(
-            3.2rem,
-            15vw,
-            5.5rem
-        );
+        font-size:
+            clamp(
+                3.2rem,
+                15vw,
+                5.5rem
+            );
     }
 
     .contact-grid {
@@ -2417,7 +2382,7 @@ footer {
     }
 
 
-    /* Resume floating button */
+    /* Sticky resume */
 
     .sticky-resume-btn {
         top: auto;
@@ -2428,7 +2393,8 @@ footer {
             0.75rem
             1.1rem;
 
-        border-right: 1px solid var(--accent);
+        border-right:
+            1px solid var(--accent);
 
         border-radius: 50px;
 
@@ -2438,13 +2404,14 @@ footer {
             translateY(120%);
 
         box-shadow:
-            0 5px 25px rgba(184,255,87,0.12);
+            0 5px 25px
+            rgba(184,255,87,0.12);
     }
 
     .sticky-resume-btn.visible {
-        transform: translateY(0);
+        transform:
+            translateY(0);
     }
-
 }
 
 
@@ -2484,7 +2451,6 @@ footer {
     .footer-links {
         grid-template-columns: 1fr;
     }
-
 }
 
 
@@ -2510,6 +2476,4 @@ footer {
         opacity: 1;
         transform: none;
     }
-
 }
-```
